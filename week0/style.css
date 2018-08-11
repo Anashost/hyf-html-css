@@ -1,0 +1,129 @@
+body{
+    background-color:rgb(161, 161, 161, 0.767);
+    font-family:arial, sans-serif;
+    font-size:15px;
+    margin:0;
+    padding:0;
+  }
+  
+  .header{
+    background-color:#122e2e;
+    border-bottom:rgb(158, 44, 44) 4px solid;
+    margin:0;
+    padding:20px;
+  }
+  
+  .header h1{
+    color:white;
+    margin:0px;
+    display:inline;
+    
+  }
+  
+  
+  .header span{
+    color:rgb(158, 44, 44);
+    font-size:20px;
+  }
+  
+  .header a{
+    color:white;
+    text-decoration:none;
+    
+  }
+  
+  .header ul{
+    margin:0;
+    float: right;
+    font-size:22px;
+    
+    
+  }
+  
+  .header li{
+    
+    margin:0;
+    display:inline-block;
+    list-style-type:none;
+    padding:5px 30px;
+  }
+  #imgmain{
+   width: 100%;
+   border-bottom:#122e2e 7px solid;
+  }
+  
+  .imgsection{
+    text-align: right;
+    float:right;
+    width:30%;
+    margin-right: 30px;
+  }
+  
+  .imgall{
+    width:450px;
+    border-bottom:rgb(158, 44, 44) 4px solid;
+    margin:10px;
+    
+  }
+  .articlemenu{
+    background-color:rgb(255, 255, 255, 0.479);
+    color:rgb(126, 25, 25);
+    border-top:rgb(158, 44, 44) 3px solid;
+    width:30%;
+    margin:20px;
+    padding:10px;
+    font-size:18px;
+    
+  }
+  
+  .articlemenu a{
+    color:#122e2e;
+  }
+  
+  
+  .article{
+    background-color:rgb(255, 255, 255, 0.479);
+    border-left:rgb(158, 44, 44) 3px solid;
+    width:60%;
+    margin:20px;
+    
+  }
+  
+  .section .article h3{
+    font-size:20px;
+    color:rgb(126, 25, 25);
+    margin:25px;
+    padding:10px;
+  }
+  
+  .section .article p{
+    font-size:16px;
+    margin:25px;
+    padding:10px;
+  }
+  
+  #footer{
+    clear:both;
+    background-color:#122e2e;
+    color:white;
+    font-size:20px;
+    margin:0;
+    padding:10px;
+    border-top:rgb(158, 44, 44) 3px solid;
+  }
+  
+  #footer p{
+    margin:0;
+  }
+  #footer a{
+    color:white;
+  }
+.contactinfo{
+    font-size: 20px;
+    background-color: rgba(255, 255, 255, 0.479);
+    width: 60%;
+    margin: 20px;
+}
+.contactinfo p, .contactinfo h3{
+    margin:20px;
+}
