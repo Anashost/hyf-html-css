@@ -1,0 +1,137 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #553161;
+    background-image: url(http://www.transparenttextures.com/patterns/gplay.png);
+}
+
+/* Header */
+header{
+    text-align: center;
+}
+
+h1{
+    color: #f0f0f0;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+#logos .logo{
+    width: 20px;
+    margin: 5px;
+}
+
+#myimg{
+    width: 50%;
+    border: 5px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+/* Navigation **/
+nav{
+    margin: auto;
+    width: 90%;
+    background-color: #f0f0f0;
+    background-image: url(https://www.transparenttextures.com/patterns/gplay.png);
+    text-decoration:none;
+    border-radius:7px 7px 0 0;
+    margin-bottom: 70px;
+}
+
+nav ul{
+    text-align: center;
+    margin: 0;
+}
+
+nav li {
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+    padding:20px;
+    text-align: center;
+}
+
+
+
+
+nav a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #8a2be2;
+    
+}
+
+#mainimg{
+    width: 100%;
+}
+
+strong{
+    color: #5e12a5;
+}
+
+/* All Sections ***/
+section{
+    background-color: #f0f0f0;
+    background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
+    font-size: 18px;
+    width: 70%;
+    margin: auto;
+    border-radius: 5px;
+    line-height: 30px;
+    margin-bottom: 70px;
+    border-bottom: #5e12a5;
+} 
+
+section p, section h3{
+    padding: 10px;
+    
+}
+
+section p{
+    padding: 10px;
+    border-bottom:1px solid #9671b9;
+}
+section h2{
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #bb9ad1;
+    background-image: url(http://www.transparenttextures.com/patterns/gplay.png);
+}
+
+#info{
+    background-color: #b355e9;
+    background-image: url(http://www.transparenttextures.com/patterns/gplay.png);
+    width: 80%;
+    margin: auto;
+    border-radius:7px;
+   
+}
+
+#info li{
+    color: white;
+}
+
+section ul a{
+    color: #5e12a5;
+}
+
+section ul a:hover{
+    color: #350661;
+}
+
+/* Footer ****/
+footer{
+    background-color: #f1eeee;
+    background-image: url(https://www.transparenttextures.com/patterns/gplay.png);
+    margin: 0;
+}
+
+footer h3{
+    padding: 20px;
+    margin: 0;
+}
