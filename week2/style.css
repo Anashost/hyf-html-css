@@ -33,11 +33,12 @@ h2{
 
 li{
     background:  #FFAE5D;
-    padding: 15px;
+    padding: 17px;
     list-style-type: none;
     margin: 5px;
     border: 3px solid rgb(197, 125, 53);
     border-radius: 30px;
+    overflow: hidden;
     
 }
 
@@ -186,5 +187,6 @@ section{
         }
         
         }
+
 
 
