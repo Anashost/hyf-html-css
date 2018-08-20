@@ -1,5 +1,4 @@
 /*** V2 ***/
-
 * {
     margin: 0px;
     padding: 0px;   
@@ -15,6 +14,7 @@ img{
 }
 
 h1{
+    
     background:  #6F3662;
     border: 2px solid rgb(221, 76, 143);
     color: beige;
@@ -30,7 +30,6 @@ h2{
     border-radius: 5px;
     clear: both;
 }
-
 h3{
     background: rgb(197, 125, 53);
     padding: 5%;
@@ -50,6 +49,7 @@ p{
     #grid-floats .grid-item:nth-child(1){
         width: 95%; 
         margin: 1%;
+
        }
 
        #grid-floats .grid-item{
@@ -66,7 +66,8 @@ p{
     /**  Flex   **/ 
 #grid-flex {
    display: flex;
-   flex-wrap: wrap; 
+   flex-wrap: wrap;
+    
 }
 
 #grid-flex .grid-item:nth-child(1){
@@ -83,6 +84,9 @@ p{
     height: 400px; 
     overflow: auto;
 }
+
+
+
 }
 
 /***          Tablet          ***/ 
@@ -96,6 +100,7 @@ p{
        }
 
        #grid-floats .grid-item:nth-child(2){
+        
         width: 44%;
        }
 
