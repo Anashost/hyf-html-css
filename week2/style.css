@@ -1,7 +1,7 @@
 /*** V3 ***/
 * {
-    margin: 0px;
-    padding: 0px;   
+    margin: 0;
+    padding: 0;   
     
 }
 body{
@@ -122,16 +122,16 @@ section{
     }
     
     section #grid-flex .grid-item:nth-child(1){
-        width: calc(50% - 30px); 
+        width: 46.3%; 
     }
 
     section #grid-flex .grid-item:nth-child(2){
-        width: calc(50% - 30px); 
+        width: 46.3%;
     }
     
     
     section #grid-flex .grid-item{
-        width: calc(33.3% - 30px); 
+        width: 30%;
         margin: 1%;
         background:  #FFAE5D;
         border: 3px solid rgb(197, 125, 53);
