@@ -1,8 +1,10 @@
-/*** V2 ***/
-
- body{
+/*** V3 ***/
+* {
     margin: 0px;
     padding: 0px;   
+    
+}
+body{
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
     background:  #F8DEBD;
@@ -14,7 +16,7 @@ img{
 h1{
     
     background:  #6F3662;
-    border: 2px solid rgb(221, 76, 143);
+    border: 2px solidrgb(104, 25, 85);
     color: beige;
     padding: 10px;
     margin: auto;
@@ -37,23 +39,27 @@ p{
     padding: 3%;
 }
 
+section{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 
 /***          mobile            ***/ 
 
-@media (max-width:500px) {
+@media only screen and (max-width:500px) {
 
 
     /**  float   **/ 
     #grid-floats .grid-item:nth-child(1){
-        width: 95%; 
-        margin: 1%;
-
+        width: calc(100% - 20px);
        }
 
        #grid-floats .grid-item{
         float:left;
-        width: 43%; 
-        margin: 2%;
+        width: calc(50% - 20px); 
+        margin: 1%;
         background:  #FFAE5D;
         border: 3px solid rgb(197, 125, 53);
         border-radius: 10px;
@@ -65,21 +71,18 @@ p{
 #grid-flex {
    display: flex;
    flex-wrap: wrap;
-    
 }
 
 #grid-flex .grid-item:nth-child(1){
-    flex: 95%;
-    margin: 1%;
+    width: calc(100% - 20px);
 }
 
 #grid-flex .grid-item{
-    width: 43%; 
-    margin: 2%;
+    width: calc(50% - 20px); 
+    margin: 1%;
     background:  #FFAE5D;
     border: 3px solid rgb(197, 125, 53);
     border-radius: 10px;
-    height: 400px; 
     overflow: auto;
 }
 
@@ -89,23 +92,22 @@ p{
 
 /***          Tablet          ***/ 
 
-@media (min-width:500px) and (max-width:1024px) {
+@media only screen and (min-width:500px) and (max-width:1024px) {
 
        /**  float   **/
 
-       #grid-floats .grid-item:nth-child(1){
-        width: 44%;
+       section #grid-floats .grid-item:nth-child(1){
+        width: 46.3%; 
        }
 
-       #grid-floats .grid-item:nth-child(2){
-        
-        width: 44%;
+       section #grid-floats .grid-item:nth-child(2){
+        width: 46.3%;
        }
 
-       #grid-floats .grid-item{
+        section #grid-floats .grid-item{
         float:left;
-        width: 28%; 
-        margin: 2%;
+        width: 30%;
+        margin: 1%;
         background:  #FFAE5D;
         border: 3px solid rgb(197, 125, 53);
         border-radius: 10px;
@@ -114,27 +116,26 @@ p{
         }
 
        /**  Flex   **/ 
-    #grid-flex {
+       section #grid-flex {
         display: flex;
         flex-wrap: wrap;
     }
     
-    #grid-flex .grid-item:nth-child(1){
-        width: 44%;
+    section #grid-flex .grid-item:nth-child(1){
+        width: calc(50% - 30px); 
     }
 
-    #grid-flex .grid-item:nth-child(2){
-        width: 44%;
+    section #grid-flex .grid-item:nth-child(2){
+        width: calc(50% - 30px); 
     }
     
     
-    #grid-flex .grid-item{
-        width: 28%; 
-        margin: 2%;
+    section #grid-flex .grid-item{
+        width: calc(33.3% - 30px); 
+        margin: 1%;
         background:  #FFAE5D;
         border: 3px solid rgb(197, 125, 53);
         border-radius: 10px;
-        height: 400px; 
         overflow: auto;
     }
     
@@ -143,21 +144,21 @@ p{
 
 /***          Disctop            ***/ 
 
-@media (min-width:1025px) {
+@media only screen and (min-width:1025px) {
     
     /**  float   **/ 
-       #grid-floats .grid-item:nth-child(1){
-        width: 44%;
+    #grid-floats .grid-item:nth-child(1){
+        width: 47.3%;
        }
 
        #grid-floats .grid-item:nth-child(1) img{
-           width: 50%;
+           width: 45%;
        }
 
        #grid-floats .grid-item{
         float:left;
-        width:20%;
-        margin: 2%;
+        width:22.3%;
+        margin: 1%;
         background:  #FFAE5D;
         border: 3px solid rgb(197, 125, 53);
         border-radius: 10px;
@@ -173,7 +174,7 @@ p{
         }
         
         #grid-flex .grid-item:nth-child(1){
-            width: 44%;
+            width: 47.3%;
         }
     
         #grid-flex .grid-item:nth-child(1) img{
@@ -181,12 +182,11 @@ p{
         }
 
         #grid-flex .grid-item{
-            width: 20%; 
-            margin: 2%;
+            width:22.3%;
+            margin: 1%;
             background:  #FFAE5D;
             border: 3px solid rgb(197, 125, 53);
             border-radius: 10px;
-            height: 400px; 
             overflow: auto;
         }
         
