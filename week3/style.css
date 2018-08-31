@@ -1,0 +1,338 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:  Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #bdbabaaf;
+    font-size: 14px;
+}
+
+header{
+    margin: 0;
+    padding: 0
+}
+
+#logo{
+    display: hidden;
+    width: 100px;
+    height: 70px;
+    float: left;
+    background: rgb(172, 30, 89);
+    
+}
+#logo h1{
+    color: azure;
+    text-align: center;
+    font-size: 25px; 
+    margin-top: 20px;
+    
+    
+}
+
+#nav1 {
+    background: rgba(0, 0, 0, 0.856);
+    color: rgba(233, 230, 230, 0.815);    
+}
+
+#nav1 li{
+    display: inline-block;
+    padding: 8px;
+    list-style: none;
+}
+
+#nav1 .rightlist {
+    float: right;
+    list-style: none;
+    padding: 10px;   
+}
+
+#nav2{
+    background-color: #e7e4dd;
+    color: #5d5c5a71;
+    
+}
+
+#nav2 li{
+    display: inline-block;
+    padding: 10px;
+    list-style: none;
+    font-weight: bold;
+}
+         /******************    End header     ********************************************************************************/
+         
+
+#threepics{
+    margin-top: 30px;
+    display: grid;
+    height: 900px;
+    grid-template-columns:repeat(3,1fr) ;
+    grid-template-rows:repeat(3,1fr) ;
+    grid-template-areas:
+    "one one two "
+    "one one three ";
+    color: white;
+}
+
+
+#threepics .item1{
+    margin: 5px;
+    grid-area: one;
+    background-color: rgba(173, 79, 79, 0.712);
+    padding: 10px;
+}
+
+#threepics .item2{
+    margin: 5px;
+    grid-area: two;
+    background-color: rgb(26, 175, 175);
+    padding: 10px;
+}
+
+#threepics .item3{
+    margin: 5px;
+    grid-area: three;
+    background-color: rgb(57, 161, 48);
+    padding: 10px;
+}
+
+
+/******************    End section 1     ********************************************************************************/
+#lnews{
+    width: 80%;
+    margin: auto;
+}
+
+#lnews h1{
+    margin-left: 10px;
+}
+#lnews p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#lnews a {
+    text-decoration: none;
+    color: rgb(212, 35, 35);
+    font-size: 25px;
+}
+#lnewsa:hover{
+    color: rgba(0, 0, 0, 0.842);
+}
+
+#flex-list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#flex-list .flex-item{
+   width: calc(25% - 20px);
+   margin: 10px;
+   list-style-type: none;
+
+}
+
+img{
+    width: 100%;
+}
+
+/******************    End section 2    ********************************************************************************/
+#fundstitle{
+    margin-left: 10.5%;
+    margin-top:50px;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+#fundstitlep{
+    margin-left: 10.5%;
+    font-size: 18px;
+    margin-left: 10.5%;
+}
+
+#lfunds{
+    line-height: 20px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+a {
+    text-decoration: none;
+    color: rgb(212, 35, 35); 
+}
+
+a:hover{
+    color: rgba(0, 0, 0, 0.842);
+}
+
+#lfunds .fund {
+    width: calc(25% - 20px);
+    margin: 10px;
+}
+
+#lfunds h3{
+    background: rgb(223, 67, 56);
+    color: white;
+    padding: 10px;
+}
+
+#lfunds img{
+    margin: 15px 15px 0 10px;
+    width: 60px;
+    float: left;
+}
+
+#lfunds .p1{
+    background: rgba(255, 206, 195, 0.945);
+    padding: 20px;
+    font-weight: bold;
+    font-size: 18px;
+  
+}
+
+#lfunds .p2{
+    background: rgb(255, 221, 230);
+    padding: 40px;
+}
+
+#lfunds .p3{
+    background: rgb(255, 221, 230);
+    padding: 30px;
+    border-top: 1px solid rgba(255, 0, 0, 0.322);
+}
+
+/******************    End section 3    ********************************************************************************/
+
+footer nav{
+    font-size: 15px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.637);
+}
+
+footer ul{
+    background: rgba(0, 0, 0, 0.856);
+}
+
+footer ul li{
+    display: inline-table;
+    padding:37px 10px 37px 10px;
+}
+
+footer p{
+    background: rgba(0, 0, 0, 0.986);
+    padding: 40px;
+}
+
+
+
+/******************    Tablet    *********************/
+
+@media only screen and (min-width:760px) and (max-width:1023px){
+    #lnews{
+        width: 98%;
+        margin: auto;
+    }
+    
+    #flex-list .flex-item{
+        width: calc(33.3% - 20px);
+         margin: 10px;
+    }
+
+    #fundstitle{
+        margin-left: 2%;
+        
+    }
+
+    #fundstitlep{
+        margin-left: 10.5%;
+        font-size: 18px;
+        margin-left: 2%;
+    }
+
+    #lfunds{
+        margin: auto;
+        width: 98%;
+    }
+
+    #lfunds .fund {
+        width: calc(33.3% - 20px);
+        margin: 10px;
+    }
+
+    #lfunds .p1{
+        padding: 20px;
+    }
+    
+    #lfunds .p2{
+        padding: 20px;
+    }
+    
+    #lfunds .p3{
+        padding: 10px;
+}
+
+
+}
+
+
+/******************    Mobile    *********************/
+
+@media only screen and (max-width:759px){
+
+    #threepics{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #threepics .item1 , .item2, .item3{
+        width: calc(100% - 10px);
+        margin: 5px;
+    }
+
+    #lnews{
+        margin: auto;
+        width: 98%;
+    }
+
+    #lnews #flex-list{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #lnews #flex-list .flex-item{
+        width: 100%;
+    }
+
+    #lnews #flex-list img{
+        float: left;
+        width: 80px;
+        height: 70px;
+        margin: 5px;
+    }
+
+    #lnews #flex-list .flex-item  p{
+        font-size: 15px;
+        margin-top: 10px;
+    }
+
+    #lfunds{
+        width: 98%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    #lfunds .fund {
+        width: calc(1005% - 20px);
+        margin: 10px;
+    }
+
+}
+
