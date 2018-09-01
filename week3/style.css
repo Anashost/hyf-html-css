@@ -17,6 +17,15 @@ header{
     padding: 0
 }
 
+header a {
+    text-decoration: none;
+    color: rgb(253, 253, 253);
+}
+
+ header a:hover{
+    color: rgba(170, 166, 166, 0.842);
+}
+
 #logo{
     display: hidden;
     width: 100px;
@@ -26,12 +35,9 @@ header{
     
 }
 #logo h1{
-    color: azure;
     text-align: center;
     font-size: 25px; 
     margin-top: 20px;
-    
-    
 }
 
 #nav1 {
@@ -63,47 +69,61 @@ header{
     list-style: none;
     font-weight: bold;
 }
-         /******************    End header     ********************************************************************************/
+         /******************   section 1     ********************************************************************************/
          
 
-#threepics{
-    margin-top: 30px;
-    display: grid;
-    height: 900px;
-    grid-template-columns:repeat(3,1fr) ;
-    grid-template-rows:repeat(3,1fr) ;
-    grid-template-areas:
-    "one one two "
-    "one one three ";
-    color: white;
-}
+         #threepics{
+            margin-top: 30px;
+            display: grid;
+            height: 900px;
+            grid-template-columns:repeat(3,1fr) ;
+            grid-template-rows:repeat(3,1fr) ;
+            grid-template-areas:
+            "one one two "
+            "one one three ";
+            color: white;
+        }
+        
+        
+        #threepics .item1{
+            
+            margin: 5px;
+            grid-area: one;
+            background-image: url('https://source.unsplash.com/1300x800/?youtube');
+            background-size: cover;
+            background-position: center;
+            padding: 10px;
+        }
+        
+        #threepics .item2{
+            margin: 5px;
+            grid-area: two;
+            background-image: url('https://source.unsplash.com/700x300/?google');
+            background-size: cover;
+            background-position: center;
+            padding: 10px;
+        }
+        
+        #threepics .item3{
+            margin: 5px;
+            grid-area: three;
+            background-image: url('https://source.unsplash.com/700x300/?cars');
+            background-size: cover;
+            background-position: center;
+            padding: 10px;
+        }
 
+        #threepics h1{
+            font-size: 3.5rem;
+        }
 
-#threepics .item1{
-    margin: 5px;
-    grid-area: one;
-    background-color: rgba(173, 79, 79, 0.712);
-    padding: 10px;
-}
+        #threepics h2{
+            font-size: 2rem;
+        }
 
-#threepics .item2{
-    margin: 5px;
-    grid-area: two;
-    background-color: rgb(26, 175, 175);
-    padding: 10px;
-}
-
-#threepics .item3{
-    margin: 5px;
-    grid-area: three;
-    background-color: rgb(57, 161, 48);
-    padding: 10px;
-}
-
-
-/******************    End section 1     ********************************************************************************/
+/******************    section 2     ********************************************************************************/
 #lnews{
-    width: 80%;
+    width: 70%;
     margin: auto;
 }
 
@@ -111,16 +131,16 @@ header{
     margin-left: 10px;
 }
 #lnews p{
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bold;
 }
 
 #lnews a {
     text-decoration: none;
     color: rgb(212, 35, 35);
-    font-size: 25px;
+    font-size: 1.7rem;
 }
-#lnewsa:hover{
+#lnews a:hover{
     color: rgba(0, 0, 0, 0.842);
 }
 
@@ -140,9 +160,9 @@ img{
     width: 100%;
 }
 
-/******************    End section 2    ********************************************************************************/
+/******************    section 3    ********************************************************************************/
 #fundstitle{
-    margin-left: 10.5%;
+    margin-left: 15.5%;
     margin-top:50px;
     font-size: 25px;
     font-weight: bold;
@@ -150,25 +170,23 @@ img{
 }
 
 #fundstitlep{
-    margin-left: 10.5%;
+    margin-left: 15.5%;
     font-size: 18px;
-    margin-left: 10.5%;
 }
-
 #lfunds{
     line-height: 20px;
-    width: 80%;
+    width: 70%;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
 }
 
-a {
+#fundstitle a, #fundstitlep a ,#fundstitlep  {
     text-decoration: none;
     color: rgb(212, 35, 35); 
 }
 
-a:hover{
+#fundstitle  a:hover , #fundstitlep a:hover{
     color: rgba(0, 0, 0, 0.842);
 }
 
@@ -194,7 +212,6 @@ a:hover{
     padding: 20px;
     font-weight: bold;
     font-size: 18px;
-  
 }
 
 #lfunds .p2{
@@ -208,7 +225,7 @@ a:hover{
     border-top: 1px solid rgba(255, 0, 0, 0.322);
 }
 
-/******************    End section 3    ********************************************************************************/
+/******************    Footer    ********************************************************************************/
 
 footer nav{
     font-size: 15px;
@@ -286,6 +303,15 @@ footer p{
 
 @media only screen and (max-width:759px){
 
+
+    #threepics h1{
+        font-size: 1.5rem;
+    }
+
+    #threepics h2{
+        font-size: 1.5rem;
+    }
+
     #threepics{
         display: flex;
         flex-wrap: wrap;
@@ -295,6 +321,8 @@ footer p{
         width: calc(100% - 10px);
         margin: 5px;
     }
+           
+    /****************/
 
     #lnews{
         margin: auto;
@@ -321,6 +349,15 @@ footer p{
         font-size: 15px;
         margin-top: 10px;
     }
+    /****************/
+    #fundstitlep , #fundstitle{
+        margin-left: 2.5%;
+    }
+
+    #fundstitlep{
+        display: grid;
+        font-size: 1rem;
+    }
 
     #lfunds{
         width: 98%;
@@ -332,6 +369,25 @@ footer p{
     #lfunds .fund {
         width: calc(1005% - 20px);
         margin: 10px;
+    }
+
+    #lfunds .p1{
+        background: rgba(255, 206, 195, 0.945);
+        padding: 20px;
+        font-weight: bold;
+        font-size: 18px;
+      
+    }
+    
+    #lfunds .p2{
+        background: rgb(255, 221, 230);
+        padding: 25px;
+    }
+    
+    #lfunds .p3{
+        background: rgb(255, 221, 230);
+        padding: 15px;
+        border-top: 1px solid rgba(255, 0, 0, 0.322);
     }
 
 }
