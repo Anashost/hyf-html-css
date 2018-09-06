@@ -93,8 +93,73 @@ header a {
     display: none;
 }
          /******************   section 1     ********************************************************************************/
-         
+         #threepics{
+             display: none;
+         }
 
+#left-pics img{
+    width: 100%;
+    height:500px;
+    max-height:500px;
+}
+
+#left-pics{
+    float: left;
+    width: calc(65% - 10px);
+    margin: 5px;
+}
+
+#right-pics img{
+    width: 100%;
+    max-height:250px;
+    height:250px;
+}
+
+.item1 .text-wraper1{
+    margin: 0;
+    position: absolute;
+    bottom:20px;
+    left: 16px;
+}
+
+.item1 , .item2{
+    position: relative;
+}
+
+#right-pics{
+    float: left;
+    width: calc(35% - 20px);
+    margin: 5px;
+}
+
+.item2 .text-wraper2{
+    position: absolute;
+    bottom:20px;
+    left: 16px;
+}
+
+#left-pics h1{
+    font-size: 2.5rem;
+    color: white;
+}
+
+#left-pics p{
+    font-size: 0.8rem;
+    color: white;
+}
+
+#right-pics h1{
+    font-size: 2rem;
+    color: white;
+}
+
+#right-pics p{
+    font-size: 0.8rem;
+    color: white;
+}
+
+
+/*
          #threepics{
             margin-top: 30px;
             display: grid;
@@ -115,7 +180,7 @@ header a {
             background-image: url('https://source.unsplash.com/1300x800/?youtube');
             background-size: cover;
             background-position: center;
-            padding: 10px;
+     
         }
         
         #threepics .item2{
@@ -124,7 +189,7 @@ header a {
             background-image: url('https://source.unsplash.com/700x300/?google');
             background-size: cover;
             background-position: center;
-            padding: 10px;
+           
         }
         
         #threepics .item3{
@@ -133,25 +198,50 @@ header a {
             background-image: url('https://source.unsplash.com/700x300/?cars');
             background-size: cover;
             background-position: center;
-            padding: 10px;
+         
+        }
+
+           .text-container{
+               position: absolute;
+               ;
+               top: 70%;
+               background-image: linear-gradient(to left bottom, #00000000, #03030386);
+               width: 100%;
+               margin: 0;
+               padding: 35px;
+           }
+
+          .item2 .text-container{
+            position: relative;
+            font-size: 1rem;
+            top: 20%;
+            background-image: linear-gradient(to left bottom, #00000000, #03030386);
+            width: 100%;
+            margin: 0;
+            padding: 20px;
         }
 
         #threepics h1{
-            font-size: 3.5rem;
+            font-size: 2.5rem;
         }
 
-        #threepics h2{
-            font-size: 2rem;
+        #threepics p{
+            font-size: 0.8rem;
         }
+/*
+
+
 
 /******************    section 2     ********************************************************************************/
-#lnews{
+
+#lnews{ 
     width: 70%;
     margin: auto;
 }
 
 #lnews h1{
     margin-left: 10px;
+    clear: both;
 }
 #lnews p{
     font-size: 0.9rem;
@@ -488,12 +578,56 @@ footer p{
     display: none;
     }
 
-    #threepics h1{
-        font-size: 1.5rem;
+    #three-pics{
+        display: none;
     }
 
-    #threepics h2{
-        font-size: 1.5rem;
+    #threepics{
+        display: block;
+    }
+
+    #threepics .item1{
+            
+        margin: 5px;
+        grid-area: one;
+        background-image: url('https://source.unsplash.com/1300x800/?youtube');
+        background-size: cover;
+        background-position: center;
+        padding: 10px;
+    }
+    
+    #threepics .item2{
+        margin: 5px;
+        grid-area: two;
+        background-image: url('https://source.unsplash.com/700x300/?google');
+        background-size: cover;
+        background-position: center;
+        padding: 10px;
+    }
+    
+    #threepics .item3{
+        margin: 5px;
+        grid-area: three;
+        background-image: url('https://source.unsplash.com/700x300/?cars');
+        background-size: cover;
+        background-position: center;
+        padding: 10px;
+    }
+
+    #threepics{
+        margin-top: 30px;
+        display: grid;
+        height: 900px;
+    }
+
+    #threepics h1 , #threepics h2{
+        font-size: 2rem;
+        color: #ffffff;
+    }
+
+    #threepics p{
+        font-size: 1rem;
+        color: #ffffff;
     }
 
     #threepics{
