@@ -450,6 +450,10 @@ footer p{
         width: 98%;
         margin: auto;
     }
+
+    #lnews p{
+        font-size:0.8rem;
+    }
     
     #flex-list .flex-item{
         width: calc(33.3% - 20px);
@@ -458,7 +462,6 @@ footer p{
 
     #fundstitle{
         margin-left: 2%;
-        
     }
 
     #fundstitlep{
