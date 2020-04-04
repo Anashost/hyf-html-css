@@ -48,7 +48,7 @@ margin-top: 10px;
     margin: auto;
     /*direction: rtl;*/
     font-family: 'Droid Arabic Kufi', serif;
-    width: 35%;
+    width: 95%;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
@@ -114,14 +114,9 @@ h3{
 .white_space{
     margin-bottom: 200px;
 }
-@media only screen and (max-width:1260px){
-    .container{
-        width: 60%;
-    }
-}
 
-@media only screen and (max-width:759px){
+@media only screen and (max-width:768px){
     .container{
-        width: 90%;
+        width: 95%;
     }
 }
