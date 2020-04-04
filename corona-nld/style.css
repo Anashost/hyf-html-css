@@ -5,6 +5,7 @@
     padding: 0;
 }
 body{
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
     font-family: 'Droid Arabic Kufi', serif;
     margin: 0;
     padding: 0;
@@ -45,6 +46,7 @@ margin-top: 10px;
 }
 
 .container{
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
     margin: auto;
     /*direction: rtl;*/
     font-family: 'Droid Arabic Kufi', serif;
