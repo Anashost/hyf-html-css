@@ -58,13 +58,14 @@ margin-top: 10px;
 
 p{
     width: 100%;
+    font-weight: bold;
     text-align: center;
-    font-size: 1.3rem;
-    color: black;
+    font-size: 2rem;
+    color: #393939;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    padding: 5px;
-    margin: 30px auto 30px auto;
+    padding: 50px;
+    margin: 50px auto 50px auto;
 }
 
 .container p:nth-child(1){
