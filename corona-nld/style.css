@@ -1,10 +1,12 @@
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
-*{
+
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
     font-family: 'Droid Arabic Kufi', serif;
     margin: 0;
@@ -22,23 +24,23 @@ body{
     color: white;
 }
 
-.header .title{
-float: right;
-    padding: 20px;
+.header .title {
+    float: right;
+    padding: 15px;
 }
 
-span{
+span {
     padding-right: 20px;
-font-size: 2rem
+    font-size: 1.5rem
 }
 
-.flag{
+.flag {
     width: 60px;
     /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
     vertical-align: middle;
 }
 
-.header nav{
+.header nav {
     position: absolute;
     width: 30%;
     height: calc(100vh - 50px);
@@ -47,57 +49,62 @@ font-size: 2rem
     transition: 0.5s;
     background: #1abc9c;
     text-align: center;
-    margin-top: 50px;
+
 }
-.header nav.active{
+
+.header nav.active {
     left: 0;
 }
 
-.header nav ul{
+.header nav ul {
     margin: 0;
-    padding:0;
+    padding: 0;
     display: block;
 }
 
-.header nav ul li{
+.header nav ul li {
     list-style: none;
     padding-top: 20px;
-    border-bottom:1px rgba(255,255,255,0.44) solid ;
+    border-bottom: 1px rgba(255, 255, 255, 0.44) solid;
 }
 
-.header nav ul li a{
+.header nav ul li a {
     color: white;
     line-height: 50px;
     padding: 0 20px;
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: block;
 }
-.header nav ul li a:hover{
+
+.header nav ul li a:hover {
     color: #393939;
     background: white;
 }
-.menu-toggle{
+
+.menu-toggle {
     position: absolute;
     color: white;
     float: left;
     line-height: 50px;
     cursor: pointer;
     display: block;
-    font-size: 3rem;
-    padding: 25px;
+    font-size: 2rem;
+    padding: 15px;
 }
 
-.dateAndTime-Container{
-    display:grid;
+.dateAndTime-Container {
+    width: 40%;
+    margin: auto;
+    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 0;
 }
 
-.digital-clock, .date, .country{
+.digital-clock, .date, .country {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 150px;
     background-color: #207dd2;
     padding: 5px;
@@ -106,63 +113,66 @@ font-size: 2rem
     text-align: center;
     color: white;
 }
-.country{
+
+.country {
     background-color: crimson;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
 }
 
-.container{
+.container {
 @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
     margin: auto;
     /*direction: rtl;*/
     font-family: 'Droid Arabic Kufi', serif;
-    width: 95%;
+    width: 40%;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
     padding: 20px 100px 20px 100px;
-    margin-top:20px ;
+    margin-top: 20px;
 }
 
-p{
+p {
     width: 100%;
     font-weight: bold;
     text-align: center;
-    font-size: 3rem;
+    font-size: 1.3rem;
     color: #393939;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 5px;
-    padding: 50px;
-    margin: 50px auto 50px auto;
+    padding: 5px;
+    margin: 20px auto 20px auto;
 }
 
-.container p:nth-child(1){
+.container p:nth-child(1) {
     background: #ffad48;
 }
 
-.container p:nth-child(2){
+.container p:nth-child(2) {
     background: #fb8079;
 }
 
-.container p:nth-child(3){
+.container p:nth-child(3) {
     background: #68f999;
 }
-.container p:nth-child(4){
-    background: rgb(188, 185, 189);
+
+.container p:nth-child(4) {
+    background: rgba(65, 188, 189, 0.69);
 }
 
 
 @keyframes blinking {
-    0%{
+    0% {
         background-color: #ff3d50;
         color: #ddd;
     }
-    100%{
+    100% {
         background-color: #222291;
         color: #fff;
     }
 }
-#demo{
+
+#demo {
     /* NAME | TIME | ITERATION */
     animation: blinking 2s infinite;
 }
@@ -176,51 +186,67 @@ p{
     color: white;
     text-align: center;
 }
-h3{
+
+h3 {
     padding: 10px;
     font-size: 1rem;
 }
-.white_space{
+
+.white_space {
     margin-bottom: 100px;
 }
 
-@media only screen and (max-width:768px){
-    .container{
+@media only screen and (max-width: 768px) {
+    .container {
         width: 90%;
         padding: 10px;
     }
-.header{
-    padding: 0 5px;
-}
-    .header nav{
+
+    .header {
+        padding: 0 5px;
+    }
+
+    .header nav {
         width: 100%;
         margin-top: 0px;
     }
-    span{
+    .dateAndTime-Container {
+        width: 96%;
+        margin: auto;
+    }
+    span {
         font-size: 1rem;
         padding-right: 5px;
     }
-    .flag{
+
+    .flag {
         width: 30px;
         vertical-align: middle;
     }
-    .menu-toggle{
+
+    .menu-toggle {
         font-size: 1.5rem;
-        padding: 10px;
+        padding: 5px;
     }
-    .digital-clock, .date, .country{
+
+    .digital-clock, .date, .country {
         font-size: 1rem;
         width: 100px;
     }
-    .header nav ul li a{
+
+    .header nav ul li a {
         font-size: 1.3rem;
     }
-    p{
+
+    p {
         width: 100%;
         font-weight: bold;
         text-align: center;
         font-size: 1.4rem;
-        padding: 15px;
+        padding: 10px;
         margin: 20px auto 20px auto;
+    }
+    .white_space {
+        margin-bottom: 50px;
     }
 }
