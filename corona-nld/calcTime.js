@@ -1,6 +1,7 @@
 $(document).ready(function() {
     clockUpdate();
     setInterval(clockUpdate, 1000);
+
 });
 
 function clockUpdate() {
@@ -30,3 +31,4 @@ function clockUpdate() {
     $('.digital-clock').text(h + ':' + m + ':' + s)
 
 }
+

@@ -47,8 +47,8 @@ $.getJSON("https://corona.lmao.ninja/countries/Nl", function (data) {
     $('.new_deaths').append(new_deaths);
     $('.flag').attr('src',flag);
 
-    var d = new Date();
-    var strDate = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
+    let d = new Date();
+    let strDate = d.getFullYear() + "/" + (d.getMonth() + 1) + "/" + d.getDate();
     $('.date').append(strDate);
 
 });
