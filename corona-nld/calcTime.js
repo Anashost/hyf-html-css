@@ -31,4 +31,3 @@ function clockUpdate() {
     $('.digital-clock').text(h + ':' + m + ':' + s)
 
 }
-

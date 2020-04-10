@@ -1,4 +1,5 @@
-$.getJSON("https://corona.lmao.ninja/countries/sy", function (data) {
+let set_country = 'sy';
+$.getJSON("https://corona.lmao.ninja/countries/" + set_country, function (data) {
 
     let total_confirmed = data.cases;
     let total_deaths = data.deaths;

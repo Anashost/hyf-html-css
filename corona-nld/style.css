@@ -94,6 +94,7 @@ span {
 }
 
 .dateAndTime-Container {
+
     width: 40%;
     margin: auto;
     display: grid;
@@ -104,8 +105,8 @@ span {
 .digital-clock, .date, .country {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    font-size: 1.5rem;
-    width: 150px;
+    font-size: 1.3rem;
+    width: 105px;
     background-color: #207dd2;
     padding: 5px;
     margin: auto;
@@ -128,7 +129,7 @@ span {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 20px;
     text-align: center;
-    padding: 20px 100px 20px 100px;
+    padding: 30px;
     margin-top: 20px;
 }
 
