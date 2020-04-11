@@ -112,10 +112,10 @@ function myFunction() {
     }
 
     let h = document.getElementById("change-lang");
-    if (h.innerHTML === "انكليزي") {
-        h.innerHTML = "Arabic";
+    if (h.innerHTML === "English") {
+        h.innerHTML = "عربي";
     } else {
-        h.innerHTML = "انكليزي";
+        h.innerHTML = "English";
     }
 
     $("#all-ar").toggle();
