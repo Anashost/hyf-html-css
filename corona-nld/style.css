@@ -14,6 +14,17 @@ body {
     background: #f1f1f1af;
 }
 
+h2{
+    text-align: center;
+    background: #fb8a60;
+    padding: 5px;
+    width: 50%;
+    margin: auto;
+    margin-bottom: 10px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    font-size: 1.3rem;
+}
 .header {
     position: absolute;
     top: 0;
@@ -38,6 +49,11 @@ span {
     width: 60px;
     /*box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);*/
     vertical-align: middle;
+}
+.flag-list{
+    width: 40px;
+    vertical-align: middle;
+    padding-right: 10px;
 }
 
 .header nav {
@@ -196,7 +212,27 @@ h3 {
 .white_space {
     margin-bottom: 100px;
 }
+table {
+@import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+    font-family: 'Droid Arabic Kufi', serif;
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+}
 
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+/*///////////////////////////////////////////////////////////////*/
 @media only screen and (max-width: 768px) {
     .container {
         width: 90%;
@@ -249,5 +285,13 @@ h3 {
     }
     .white_space {
         margin-bottom: 50px;
+    }
+
+    table {
+    @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+        font-family: 'Droid Arabic Kufi', serif;
+        border-collapse: collapse;
+        width: 98%;
+        margin: auto;
     }
 }

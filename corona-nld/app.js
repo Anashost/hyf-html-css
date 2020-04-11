@@ -1,7 +1,4 @@
-let set_country = 'nl';
-
-$.getJSON("https://corona.lmao.ninja/countries/" + set_country, function (data) {
-    console.log(data);
+$.getJSON("https://corona.lmao.ninja/all", function (data) {
 
     // get today date
     let d = new Date();
@@ -14,7 +11,6 @@ $.getJSON("https://corona.lmao.ninja/countries/" + set_country, function (data) 
     let new_confirmed = data.todayCases;
     let new_deaths = data.todayDeaths;
     let total_recovered = data.recovered;
-    let flag = data.countryInfo.flag;
 
     // let findIndex ;
     // for (let i = 0; i < data.length; i++) {
@@ -40,3 +36,29 @@ $.getJSON("https://corona.lmao.ninja/countries/" + set_country, function (data) 
     $('.flag').attr('src', flag);
 
 });
+
+$.getJSON("https://corona.lmao.ninja/countries/" ,function (data) {
+    console.log(data);
+
+
+let default_flag = "0";
+    for (let i = 0; i <data.length ; i++) {
+        console.log(data[i].country);
+        if (data[i].countryInfo.iso2 == null){
+            data[i].countryInfo.iso2 = default_flag;
+        }
+        let html_code =
+        '<tr>\n' +
+            '        <td><img class="flag-list" src="https://raw.githubusercontent.com/NovelCOVID/API/master/assets/flags/'+data[i].countryInfo.iso2.toLowerCase()+'.png">'+data[i].country+'</td>' +
+            '        <td>'+data[i].cases+'</td>\n' +
+            '        <td>'+data[i].recovered+'</td>\n' +
+            '        <td>'+data[i].deaths+'</td>\n' +
+            '    </tr>' ;
+
+        $(".table-data").append(html_code);
+
+    }
+
+
+});
+
