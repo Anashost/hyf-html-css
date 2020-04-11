@@ -122,7 +122,7 @@ span {
     grid-gap: 0;
 }
 
-.digital-clock, .date, .country, #change-lang {
+.digital-clock, .date, .live, #change-lang {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     font-size: 1.3rem;
@@ -141,9 +141,8 @@ span {
     color: black;
 }
 
-.country {
+.live {
     background-color: crimson;
-    font-size: 1.2rem;
 }
 
 .container {
@@ -187,6 +186,17 @@ span {
     background: rgba(65, 188, 189, 0.69);
 }
 
+.search-table{
+    width: 50%;
+    margin: auto;
+}
+#myInput {
+    width: 100%;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    border: 1px solid #ddd;
+    margin-bottom: 12px;
+}
 
 @keyframes blinking {
     0% {
@@ -322,7 +332,7 @@ tr:nth-child(even) {
         padding: 5px;
     }
 
-    .digital-clock, .date, .country, #change-lang {
+    .digital-clock, .date, .live, #change-lang {
         font-size: 1rem;
         width: 75px;
     }
@@ -342,7 +352,17 @@ tr:nth-child(even) {
     .white_space {
         margin-bottom: 50px;
     }
-
+    .search-table{
+        width: 90%;
+        margin: auto;
+    }
+    #myInput {
+        width: 100%;
+        font-size: 16px;
+        padding: 12px 20px 12px 40px;
+        border: 1px solid #ddd;
+        margin-bottom: 12px;
+    }
     table {
     @import url(http://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
         font-family: 'Droid Arabic Kufi', serif;

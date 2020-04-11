@@ -32,7 +32,7 @@
 <div class="white_space"></div>
 <div class="dateAndTime-Container">
     <div class="digital-clock">00:00:00</div>
-    <div id="stats" class="country">مباشر</div>
+    <div id="stats" class="live">مباشر</div>
     <div class="date"></div>
     <div type="button" onclick="myFunction()" id="change-lang">English</div>
 </div>
@@ -62,9 +62,13 @@
 <div class="white_space"></div>
 
 <h2 id="all-countries">جميع دول العالم</h2>
-<table class="table-data">
-    <tr>
-        <th id="t-country">البلد</th>
+<div class="search-table">
+    <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for a country.." title="Type in a name">
+</div>
+
+<table id="myTable" class="table-data">
+    <tr class="t-header">
+        <th id="t-country myTable">البلد</th>
         <th id="t-cases" class="numeric-sort">جميع الحالات</th>
         <th id="t-recovered">المتعافين</th>
         <th id="t-deaths">الوفيات</th>
@@ -83,7 +87,26 @@
 
     })
 </script>
-
+<script>
+    function myFunction() {
+        let input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById("myInput");
+        filter = input.value.toUpperCase();
+        table = document.getElementById("myTable");
+        tr = table.getElementsByTagName("tr");
+        for (i = 0; i < tr.length; i++) {
+            td = tr[i].getElementsByTagName("td")[0];
+            if (td) {
+                txtValue = td.textContent || td.innerText;
+                if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                    tr[i].style.display = "";
+                } else {
+                    tr[i].style.display = "none";
+                }
+            }
+        }
+    }
+</script>
 
 </body>
 </html>
