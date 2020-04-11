@@ -11,16 +11,14 @@
     <script src="calcTime.js"></script>
     <script src="app.js"></script>
 
-
 </head>
 <body>
 <div class="header">
 
     <div class="title">
-        <span style="">احصائيات كورونا في العالم</span>
+        <span id="titlex" >احصائيات كورونا في العالم</span>
         <img class="flag" src="https://pluspng.com/img-png/earth-png-1600.png">
     </div>
-
     <nav>
         <ul>
             <li><a href="https://www.coronatracker.com/">Corona tracker</a></li>
@@ -34,30 +32,42 @@
 <div class="white_space"></div>
 <div class="dateAndTime-Container">
     <div class="digital-clock">00:00:00</div>
-    <div class="country">مباشر</div>
+    <div id="stats" class="country">مباشر</div>
     <div class="date"></div>
+    <div type="button" onclick="myFunction()" id="change-lang">انكليزي</div>
 </div>
 
 <div id="all" class="all_content">
     <div class="container">
-        <P class="total_confirmed">جميع الحالات : </P>
-        <P class="total_deaths">جميع الوفيات : </P>
-        <P class="total_recovered"> المتعافين : </P>
-        <P class="new_confirmed">حالات جديدة : </P>
-        <P id="demo" class="new_deaths">وفيات جديدة : </P>
+        <P  id="total_confirmed" class="total_confirmed pra">Total cases: </P>
+        <P class="total_deaths pra">Total Deaths: </P>
+        <P class="total_recovered pra">Total Recovered: </P>
+        <P class="new_confirmed pra">New Confirmed: </P>
+        <P  class="new_deaths demo pra">Today Deaths: </P>
+    </div>
+</div>
+
+<div id="all-ar" class="all_content">
+    <div class="container">
+        <P  class="total_confirmed pra">جميع الحالات : </P>
+        <P class="total_deaths pra">جميع الوفيات : </P>
+        <P class="total_recovered pra"> المتعافين : </P>
+        <P class="new_confirmed pra">حالات جديدة : </P>
+        <P  class="new_deaths demo pra">وفيات جديدة : </P>
     </div>
 </div>
 <!--<select name="country" class="country-list">-->
 <!--    <option>select a country</option>-->
 <!--</select>-->
 <div class="white_space"></div>
-<h2>جميع دول العالم</h2>
+
+<h2 id="all-countries">جميع دول العالم</h2>
 <table class="table-data">
     <tr>
-        <th>البلد</th>
-        <th>جميع الحالات</th>
-        <th>المتعافين</th>
-        <th>الوفيات</th>
+        <th id="t-country">البلد</th>
+        <th id="t-cases" class="numeric-sort">جميع الحالات</th>
+        <th id="t-recovered">المتعافين</th>
+        <th id="t-deaths">الوفيات</th>
     </tr>
     </table>
 <div class="white_space"></div>
@@ -73,5 +83,7 @@
 
     })
 </script>
+
+
 </body>
 </html>
