@@ -63,7 +63,7 @@ $.getJSON("https://corona.lmao.ninja/countries/", function (data) {
 });
 
 
-function myFunction() {
+function changeLanguage() {
     let a = document.getElementById("titlex");
     if (a.innerHTML === "احصائيات كورونا في العالم") {
         a.innerHTML = "Corona stats in the world";
@@ -77,11 +77,19 @@ function myFunction() {
     } else {
         b.innerHTML = "مباشر";
     }
-    let c = document.getElementById("t-country");
-    if (c.innerHTML === "البلد") {
-        c.innerHTML = "Country";
+
+    let h = document.getElementById("lang-btn");
+    if (h.innerHTML === "English") {
+        h.innerHTML = "عربي";
     } else {
-        c.innerHTML = "البلد";
+        h.innerHTML = "English";
+    }
+
+    let c = document.getElementsByClassName("t-country");
+    if (c[0].innerHTML === "البلد") {
+        c[0].innerHTML = "Country";
+    } else {
+        c[0].innerHTML = "البلد";
     }
     let d = document.getElementById("all-countries");
     if (d.innerHTML === "جميع دول العالم") {
@@ -111,12 +119,6 @@ function myFunction() {
         g.innerHTML = "الوفيات";
     }
 
-    let h = document.getElementById("change-lang");
-    if (h.innerHTML === "English") {
-        h.innerHTML = "عربي";
-    } else {
-        h.innerHTML = "English";
-    }
 
     $("#all-ar").toggle();
     $("#all").toggle();

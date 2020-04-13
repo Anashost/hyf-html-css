@@ -122,7 +122,7 @@ span {
     grid-gap: 0;
 }
 
-.digital-clock, .date, .live, #change-lang {
+.digital-clock, .date, .live, .lang-btn {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     border-radius: 10px;
     font-size: 1.3rem;
@@ -135,10 +135,13 @@ span {
     color: white;
 }
 
-#change-lang{
+.lang-btn{
     cursor: pointer;
-    background: #45f938;
+    background: #6cf96b;
     color: black;
+}
+.lang-btn:hover{
+    background: #1ff900;
 }
 
 .live {
@@ -332,7 +335,7 @@ tr:nth-child(even) {
         padding: 5px;
     }
 
-    .digital-clock, .date, .live, #change-lang {
+    .digital-clock, .date, .live, .lang-btn {
         font-size: 1rem;
         width: 75px;
     }
