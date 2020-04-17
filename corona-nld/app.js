@@ -1,4 +1,4 @@
-$.getJSON("https://corona.lmao.ninja/all", function (data) {
+$.getJSON("https://corona.lmao.ninja/v2/all", function (data) {
 
     // get today date
     let d = new Date();
@@ -38,7 +38,7 @@ $.getJSON("https://corona.lmao.ninja/all", function (data) {
 
 });
 
-$.getJSON("https://corona.lmao.ninja/countries/", function (data) {
+$.getJSON("https://corona.lmao.ninja/v2/countries/", function (data) {
     console.log(data);
 
     let default_flag = "0";
